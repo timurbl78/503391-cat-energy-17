@@ -1,3 +1,5 @@
+@import "../global/variables";
+
 .main-footer {
   max-width: 320px;
   background-color: #f2f2f2;
@@ -27,7 +29,7 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  color: #444444;
+  color: $grey;
   font-size: 16px;
   line-height: 16px;
   font-family: "Arial", sans-serif;

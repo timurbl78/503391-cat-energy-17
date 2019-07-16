@@ -1,4 +1,4 @@
-@import "variables";
+@import "../global/variables";
 
 .about {
   margin-top: 20px;
@@ -30,7 +30,7 @@
   padding-left: 80px;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $grey;
 
   &--leaf::before {
     content: "";
@@ -39,7 +39,7 @@
     top: 0;
     width: 60px;
     height: 60px;
-    background: $green url("../img/advantage-leaf@1x.png") no-repeat 6px 4px;
+    background: $green url("../../img/advantage-leaf@1x.png") no-repeat 6px 4px;
   }
 
   &--water::before {
@@ -49,7 +49,7 @@
     top: 0;
     width: 60px;
     height: 60px;
-    background: $green url("../img/advantage-powder@1x.png") no-repeat 6px 4px;
+    background: $green url("../../img/advantage-powder@1x.png") no-repeat 6px 4px;
   }
 
   &--cutlery::before {
@@ -59,7 +59,7 @@
     top: 0;
     width: 60px;
     height: 60px;
-    background: $green url("../img/advantage-dining@1x.png") no-repeat 6px 4px;
+    background: $green url("../../img/advantage-dining@1x.png") no-repeat 6px 4px;
   }
 
   &--clock::before {
@@ -69,6 +69,6 @@
     top: 0;
     width: 60px;
     height: 60px;
-    background: $green url("../img/advantage-clock@1x.png") no-repeat 6px 4px;
+    background: $green url("../../img/advantage-clock@1x.png") no-repeat 6px 4px;
   }
 }
