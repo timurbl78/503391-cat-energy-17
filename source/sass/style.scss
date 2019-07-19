@@ -1,3 +1,5 @@
+@import "global/global";
+@import "global/fonts";
 @import "global/variables";
 @import "blocks/button";
 @import "blocks/main-header";
@@ -12,30 +14,3 @@
 /*------*/
 @import "blocks/map";
 @import "blocks/social-list";
-
-body {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-.wrapper {
-  margin-right: 20px;
-  margin-left: 20px;
-}

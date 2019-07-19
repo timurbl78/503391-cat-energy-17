@@ -2,7 +2,7 @@
 
 .about {
   margin: 20px auto 0;
-  width: 320px;
+  width: $mobile-width;
   padding: 0 20px;
   font-family: "Oswald", "Arial", sans-serif;
 }
@@ -73,9 +73,9 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .about {
-    width: 768px;
+    width: $tablet-width;
     padding: 0 30px;
   }
 
@@ -88,9 +88,9 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .about {
-    width: 1440px;
+    width: $desktop-width;
     padding: 0 110px;
   }
 

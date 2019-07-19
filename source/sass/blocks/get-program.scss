@@ -3,7 +3,7 @@
 .get-program {
   margin: 0 auto;
   position: relative;
-  width: 320px;
+  width: $mobile-width;
   height: 480px;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
@@ -38,11 +38,11 @@
   left: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .get-program {
     margin-top: 40px;
     text-align: left;
-    width: 768px;
+    width: $tablet-width;
     height: 810px;
     background-image: url("../../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
@@ -80,11 +80,11 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .get-program {
     margin: 0 auto;
     height: 696px;
-    width: 1440px;
+    width: $desktop-width;
     background-image: url("../../img/index-can-desktop@1x.png"), url("../../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: top 142px left 560px, right;

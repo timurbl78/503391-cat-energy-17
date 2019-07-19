@@ -1,6 +1,8 @@
+@import "../global/variables";
+
 .main-header {
   margin: 0 auto;
-  width: 320px;
+  width: $mobile-width;
 }
 
 .main-header__logo {
@@ -8,9 +10,9 @@
   height: 66px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-header {
-    width: 768px;
+    width: $tablet-width;
     height: 106px;
   }
 
@@ -29,13 +31,13 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .main-header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    width: 1440px;
+    width: $desktop-width;
     z-index: 100;
   }
 
