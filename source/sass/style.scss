@@ -1,12 +1,17 @@
 @import "global/variables";
+@import "blocks/button";
+@import "blocks/main-header";
+@import "blocks/site-list";
 @import "blocks/get-program";
 @import "blocks/types";
 @import "blocks/about";
-@import "blocks/map";
 @import "blocks/main-footer";
-@import "blocks/social-list";
+/*----catalog----*/
+@import "blocks/header";
 @import "blocks/catalog";
-@import "blocks/button";
+/*------*/
+@import "blocks/map";
+@import "blocks/social-list";
 
 body {
   margin: 0;

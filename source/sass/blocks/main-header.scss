@@ -1,0 +1,45 @@
+.main-header {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.main-header__logo {
+  width: 100%;
+  height: 66px;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    width: 768px;
+    height: 106px;
+  }
+
+  .main-header__wrapper {
+    height: inherit;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-header__logo {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 1440px;
+    z-index: 100;
+  }
+
+  .main-header__wrapper {
+    margin: 0 110px;
+  }
+}
