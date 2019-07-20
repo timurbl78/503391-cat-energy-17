@@ -2,35 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-    <a href="#" class="main-header__logo">
-      <img class="main-header__logo-image" src="http://placehold.it/150x100" alt="Cat energy">
-    </a>
-    <h1 class="main-header__title">
-      <span class="main-header__title-text main-header__title-text--bold">Cat</span> energy
-    </h1>
-    <nav class="main-header__menu main-menu">
-      <button class="main-menu__toggle" type="button">Открыть меню</button>
-      <ul class="main-menu__list site-list">
-        <li class="site-list__item">
-          <a href="#" class="site-list__link"></a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link"></a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link"></a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link"></a>
-        </li>
-      </ul>
-    </nav>
+    <header class="main-header header">
+    <div class="main-header__wrapper">
+      <a href="#" class="main-header__logo">
+        <img src="https://via.placeholder.com/192x65" alt="">
+      </a>
+      <nav class="main-header__menu main-menu">
+        <button class="main-menu__toggle" type="button">Открыть меню</button>
+        <ul class="main-menu__list site-list">
+          <li class="site-list__item">
+            <a href="#" class="site-list__link site-list__link--active">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
     <main class="main-form">
       <h1 class="main-form__title">Подбор программы</h1>
@@ -92,29 +88,33 @@
         <b class="questionnaire__star">* &#0151; Обязательные поля</b>
       </form>
       <section class="map">
-        <h2 class="map__title">Приглашаем к сотрудничеству диллеров!</h2>
-        <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5995768215346!2d30.3210303778501!3d59.938786342729514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563026688453!5m2!1sru!2sru" width="400" height="300" allowfullscreen></iframe>
+        <div class="map__wrapper wrapper">
+          <h2 class="map__title">Приглашаем к сотрудничеству диллеров!</h2>
+          <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5995768215346!2d30.3210303778501!3d59.938786342729514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563026688453!5m2!1sru!2sru" width="100%" height="360" allowfullscreen></iframe>
       </section>
     </main>
     <footer class="main-footer">
-    <h1 class="main-footer__logo-title logo-title">
-      <span class="logo-title--bold">Cat</span> energy
-    </h1>
-    <ul class="main-footer__list social-list">
-      <li class="social-list__item">
-        <a href="#" class="social-list__link"><img class="social-list__link-image" src="http://placehold.it/50x50" alt="vk"></a>
-      </li>
-      <li class="social-list__item">
-        <a href="#" class="social-list__link"><img class="social-list__link-image" src="http://placehold.it/50x50" alt="instagram"></a>
-      </li>
-      <li class="social-list__item">
-        <a href="#" class="social-list__link"><img class="social-list__link-image" src="http://placehold.it/50x50" alt="facebook"></a>
-      </li>
-    </ul>
-    <div class="main-footer__copy">
-      <a href="#" class="main-footer__copy-link">HTML Academy <img src="http://placehold.it/50x50" alt="HTML Academy"></a>
-    </div>
-  </footer>
+      <div class="main-footer__wrapper">
+        <div class="main-footer__logo logo-title">
+          <svg class="main-footer__logo-image" width="130" height="24"></svg>
+        </div>
+        <ul class="main-footer__list social-list">
+          <li class="social-list__item">
+            <a href="#" class="social-list__link"><img class="social-list__link-image" src="http://placehold.it/23x17" alt="vk"></a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="social-list__link"><img class="social-list__link-image" src="http://placehold.it/23x17" alt="instagram"></a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="social-list__link"><img class="social-list__link-image" src="http://placehold.it/23x17" alt="facebook"></a>
+          </li>
+        </ul>
+        <div class="main-footer__copy">
+          <a href="#" class="main-footer__copy-link">HTML Academy <img class="main-footer__copy-image" src="http://placehold.it/50x50" alt="HTML Academy"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

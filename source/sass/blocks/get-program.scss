@@ -1,8 +1,16 @@
+@import "../global/variables";
+
 .get-program {
-  max-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  width: $mobile-width;
+  height: 480px;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
-  background: #ffffff url("../../img/index-background-mobile@1x.jpg") no-repeat;
+  background-color: #ffffff;
+  background-image: url("../../img/index-can-mobile@1x.png"), url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 20px bottom 43px, top;
 }
 
 .get-program__title {
@@ -23,6 +31,75 @@
   color: #ffffff;
 }
 
-.get-program__wrapper {
-  margin-top: 3px;
+.get-program__button {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .get-program {
+    margin-top: 40px;
+    text-align: left;
+    width: $tablet-width;
+    height: 810px;
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left 30px bottom 0;
+  }
+
+  .get-program__wrapper {
+    margin: 0 30px 0 120px;
+  }
+
+  .get-program__title {
+    padding: 0;
+    margin-bottom: 30px;
+    width: 457px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+  }
+
+  .get-program__subtitle {
+    margin: 0 0 48px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+  }
+
+  .get-program__button {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: auto;
+    padding: 16px 27px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .get-program {
+    margin: 0 auto;
+    height: 696px;
+    width: $desktop-width;
+    background-image: url("../../img/index-can-desktop@1x.png"), url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 142px left 560px, right;
+  }
+
+  .get-program__wrapper {
+    margin: 0;
+    padding: 225px 0 0 191px;
+  }
+
+  .get-program__title {
+    margin-bottom: 45px;
+  }
+
+  .get-program__subtitle {
+    margin: 0 0 53px;
+  }
 }

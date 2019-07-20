@@ -1,0 +1,47 @@
+@import "../global/variables";
+
+.main-header {
+  margin: 0 auto;
+  width: $mobile-width;
+}
+
+.main-header__logo {
+  width: 100%;
+  height: 66px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    width: $tablet-width;
+    height: 106px;
+  }
+
+  .main-header__wrapper {
+    height: inherit;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-header__logo {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $desktop-width;
+    z-index: 100;
+  }
+
+  .main-header__wrapper {
+    margin: 0 110px;
+  }
+}
