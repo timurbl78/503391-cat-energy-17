@@ -39,11 +39,6 @@
   }
 }
 
-.main-menu__toggle {
-  position: absolute;
-  top: -10000px;
-}
-
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;

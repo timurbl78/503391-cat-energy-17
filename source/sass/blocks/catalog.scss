@@ -8,12 +8,13 @@
 
 .catalog__title {
   margin: 0;
-  padding: 30px 0 40px 20px;
+  padding: 32px 0 35px 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 60px;
   color: $black;
+  border-bottom: 1px solid #ededed;
 }
 
 .catalog__list {
@@ -23,10 +24,19 @@
 }
 
 .catalog__item {
-  padding: 24px 20px;
+  padding: 0 20px 24px;
+  width: 320px;
+  border-bottom: 1px solid #ededed;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__item-info {
+  width: 140px;
 }
 
 .catalog__item-title {
+  margin: 24px 0 15px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -35,22 +45,24 @@
 }
 
 .catalog__structure {
+  width: 140px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 11px;
   color: $grey;
 }
 
-.catalog__field {
-  text-align: left;
+.catalog__structure tr {
+  display: flex;
+  justify-content: space-between;
 }
 
-.catalog__value {
-  text-align: right;
+.catalog__structure td {
+  display: flex;
 }
 
 .catalog__button {
-  margin-top: 22px;
+  width: 100%;
 }
 
 .catalog__more {
@@ -96,12 +108,15 @@
   }
 
   .catalog__title {
-    margin-left: 30px;
-    padding-left: 0;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 34px 0 0 30px;
+    padding: 0;
+    border-bottom: none;
   }
 
   .catalog__list {
-    margin: 0 30px;
+    margin: 156px 30px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -109,11 +124,46 @@
   }
 
   .catalog__item {
-    padding-right: 0;
-    padding-left: 0;
+    text-align: center;
+    padding: 0 0 40px;
     width: 324px;
-    background-color: lightblue; /*временно*/
-    margin-bottom: 90px;
+    background-color: #f2f2f2;
+    margin-bottom: 140px;
+    border-bottom: none;
+  }
+
+  .catalog__item-info {
+    width: 100%;
+    padding: 0 38px;
+  }
+
+  .catalog__item-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 165px;
+    margin-bottom: 26px;
+  }
+
+  .catalog__image {
+    margin-top: -46px;
+    /*временно*/
+    display: none;
+    width: 324px;
+    height: 208px;
+  }
+
+  .catalog__structure {
+    width: 100%;
+    line-height: 25px;
+    font-size: 16px;
+  }
+
+  .catalog__structure tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog__button {
+    margin: 33px 38px 0;
   }
 }
 
@@ -133,5 +183,6 @@
 
   .catalog__item {
     width: 245px;
+    margin-bottom: 142px;
   }
 }
