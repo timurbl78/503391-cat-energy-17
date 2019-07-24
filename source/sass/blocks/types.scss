@@ -176,5 +176,44 @@
 
   .types__item {
     width: 570px;
+    padding: 0;
+  }
+
+  .types__title {
+    padding: 76px 0 0 214px;
+
+    &::after {
+      width: 100px;
+      height: 100px;
+      top: 46px;
+      right: auto;
+      left: 52px;
+    }
+
+    &--pro::before {
+      width: 134px;
+      height: 134px;
+      top: 60px;
+      right: auto;
+      left: 34px;
+    }
+
+    &--slim::before {
+      width: 98px;
+      height: 98px;
+      top: 40px;
+      right: auto;
+      left: 46px;
+    }
+  }
+
+  .types__link {
+    margin: 32px 0 63px 52px;
+  }
+
+  .types .types__about {
+    width: auto;
+    margin-top: 73px;
+    padding: 0 52px;
   }
 }
