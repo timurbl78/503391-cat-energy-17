@@ -46,11 +46,11 @@
     z-index: 1;
     content: "";
     position: absolute;
-    left: -10px;
+    left: 10px;
     top: 22px;
-    width: 70px;
+    width: 36px;
     height: 50px;
-    background: url("../../img/icon-cat-slim.svg") no-repeat 20px 0;
+    background: url("../../img/icon-cat-slim.svg") no-repeat;
   }
 
   &--pro::before {
@@ -58,10 +58,10 @@
     content: "";
     position: absolute;
     left: -9px;
-    top: 28px;
+    top: 37px;
     width: 70px;
-    height: 50px;
-    background: url("../../img/icon-cat-pro.svg") no-repeat 0 9px;
+    height: 30px;
+    background: url("../../img/icon-cat-pro.svg") no-repeat;
   }
 }
 
@@ -83,10 +83,12 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  background: url("../../img/icon-right-arrow-long.svg") no-repeat 97px 0;
+  background: url("../../img/icon-right-arrow-long.svg") no-repeat 97px 3px;
+  background-size: 24px 11px;
 
   &:hover {
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background: url("../../img/icon-right-arrow-verylong.svg") no-repeat 97px 3px;
+    background-size: 33px 11px;
   }
 
   &:active {
@@ -123,17 +125,17 @@
     }
 
     &--slim::before {
-      width: 197px;
-      height: 197px;
+      width: 141px;
+      height: 195px;
       top: 76px;
-      right: 35px;
+      right: 72px;
       left: auto;
     }
 
     &--pro::before {
       width: 270px;
-      height: 270px;
-      top: 123px;
+      height: 112px;
+      top: 132px;
       right: 6px;
       left: auto;
     }
@@ -158,7 +160,12 @@
     margin: 37px 0 63px 32px;
     font-size: 20px;
     line-height: 20px;
-    background-position: 120px 0;
+    background-position: 128px 3px;
+
+    &:hover {
+      background: url("../../img/icon-right-arrow-verylong.svg") no-repeat 128px 3px;
+      background-size: 33px 11px;
+    }
   }
 }
 
@@ -191,19 +198,19 @@
     }
 
     &--pro::before {
-      width: 134px;
-      height: 134px;
-      top: 60px;
-      right: auto;
+      width: 133px;
+      height: 57px;
+      top: 69px;
+      /*right: auto;*/
       left: 34px;
     }
 
     &--slim::before {
-      width: 98px;
+      width: 71px;
       height: 98px;
       top: 40px;
-      right: auto;
-      left: 46px;
+      /*right: auto;*/
+      left: 66px;
     }
   }
 
