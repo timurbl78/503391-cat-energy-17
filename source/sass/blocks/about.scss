@@ -1,7 +1,7 @@
 @import "../global/variables";
 
 .about {
-  margin: 20px auto 0;
+  margin: 21px auto 0;
   width: $mobile-width;
   padding: 0 20px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -10,6 +10,7 @@
 .about__title {
   margin: 0;
   font-size: 36px;
+  font-weight: normal;
   line-height: 60px;
   color: $black;
 }
@@ -18,7 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 12px 0 0;
+  margin: 9px 0 0;
   padding: 0;
 }
 
@@ -73,23 +74,119 @@
   }
 }
 
+.about__item-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: $grey;
+}
+
+.about__item-text br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .about {
+    margin-top: 0;
     width: $tablet-width;
     padding: 0 30px;
   }
 
+  .about__title {
+    margin-top: 13px;
+    margin-bottom: 12px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    font-weight: normal;
+  }
+
   .about__list {
+    margin-top: 72px;
+    justify-content: space-between;
     flex-direction: row;
   }
 
   .about__item {
-    width: 50%;
+    z-index: 5;
+    position: relative;
+    padding-top: 111px;
+    padding-left: 0;
+    width: 324px;
+    height: 280px;
+    margin-bottom: 37px;
+    margin-top: 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      background-position: 16px 15px;
+    }
+
+    &:nth-child(1)::after {
+      font-family: "Oswald", "Arial", sans-serif;
+      z-index: -1;
+      position: absolute;
+      content: "1";
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+      top: -40px;
+      left: 117px;
+    }
+
+    &:nth-child(2)::after {
+      font-family: "Oswald", "Arial", sans-serif;
+      z-index: -1;
+      position: absolute;
+      content: "2";
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+      top: -40px;
+      left: 111px;
+    }
+
+    &:nth-child(3)::after {
+      font-family: "Oswald", "Arial", sans-serif;
+      z-index: -1;
+      position: absolute;
+      content: "3";
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+      top: -40px;
+      left: 113px;
+    }
+
+    &:nth-child(4)::after {
+      font-family: "Oswald", "Arial", sans-serif;
+      z-index: -1;
+      position: absolute;
+      content: "4";
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+      top: -40px;
+      left: 113px;
+    }
+  }
+
+  .about__item-text {
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $grey;
+  }
+
+  .about__item-text br {
+    display: inline;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about {
+    margin-top: 42px;
     width: $desktop-width;
     padding: 0 110px;
   }

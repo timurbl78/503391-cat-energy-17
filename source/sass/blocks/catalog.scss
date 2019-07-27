@@ -8,12 +8,13 @@
 
 .catalog__title {
   margin: 0;
-  padding: 30px 0 40px 20px;
+  padding: 13px 0 29px 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 60px;
   color: $black;
+  border-bottom: 1px solid #ededed;
 }
 
 .catalog__list {
@@ -23,47 +24,84 @@
 }
 
 .catalog__item {
-  padding: 24px 20px;
+  padding: 0 20px 22px;
+  width: 320px;
+  border-bottom: 1px solid #ededed;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__item-info {
+  width: 140px;
 }
 
 .catalog__item-title {
+  margin: 22px 0 11px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
+  font-weight: normal;
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+
+  & br:last-of-type {
+    display: none;
+  }
 }
 
 .catalog__structure {
+  margin-left: -3px;
+  width: 146px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 13px;
   color: $grey;
 }
 
-.catalog__field {
-  text-align: left;
+.catalog__structure tr {
+  display: flex;
+  justify-content: space-between;
 }
 
-.catalog__value {
-  text-align: right;
+.catalog__structure td {
+  display: flex;
 }
 
 .catalog__button {
-  margin-top: 22px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
 }
 
 .catalog__more {
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 23px;
+}
+
+.catalog__more svg {
+  margin: 26px 0 25px;
+  width: 30px;
+  height: 30px;
+}
+
+.catalog__more .st0 {
+  fill: #d3d3d3;
 }
 
 .catalog__more-title {
-  margin: 0;
+  margin: 0 0 7px;
   font-size: 16px;
   line-height: 20px;
   font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
   text-transform: uppercase;
   color: $black;
+}
+
+.catalog__more-title br {
+  display: none;
 }
 
 .catalog__more-subtitle {
@@ -74,8 +112,17 @@
   color: $grey;
 }
 
+.catalog__more-subtitle br {
+  display: none;
+}
+
 .button.catalog__more-button {
+  margin: 21px 0 0;
+  width: 100%;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
   background-color: #f2f2f2;
   color: $grey;
   text-transform: uppercase;
@@ -96,12 +143,15 @@
   }
 
   .catalog__title {
-    margin-left: 30px;
-    padding-left: 0;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 32px 0 0 30px;
+    padding: 0;
+    border-bottom: none;
   }
 
   .catalog__list {
-    margin: 0 30px;
+    margin: 165px 30px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -109,11 +159,102 @@
   }
 
   .catalog__item {
-    padding-right: 0;
-    padding-left: 0;
+    text-align: center;
+    padding: 0 0 40px;
     width: 324px;
-    background-color: lightblue; /*временно*/
-    margin-bottom: 90px;
+    background-color: #f2f2f2;
+    margin-bottom: 140px;
+    border-bottom: none;
+  }
+
+  .catalog__item-info {
+    width: 100%;
+    padding: 0 38px;
+  }
+
+  .catalog__item-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 163px;
+    margin-bottom: 20px;
+
+    & br:last-of-type {
+      display: block;
+    }
+
+    & br:not(:last-of-type) {
+      display: none;
+    }
+  }
+
+  .catalog__image {
+    margin-top: -46px;
+    /*временно*/
+    display: none;
+    width: 324px;
+    height: 208px;
+  }
+
+  .catalog__structure {
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 29px;
+    font-size: 16px;
+  }
+
+  .catalog__structure tbody {
+    width: 100%;
+  }
+
+  .catalog__value {
+    margin-right: -7px;
+  }
+
+  .catalog__structure tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog__button {
+    margin: 31px 38px 0;
+  }
+
+  .catalog__more {
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+  }
+
+  .catalog__more svg {
+    margin: 54px 0 49px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .catalog__more .st0 {
+    fill: #e8e8e8;
+  }
+
+  .catalog__more-title {
+    font-size: 20px;
+    margin-bottom: 23px;
+  }
+
+  .catalog__more-title br {
+    display: block;
+  }
+
+  .catalog__more-subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .catalog__more-subtitle br {
+    display: block;
+  }
+
+  .button.catalog__more-button {
+    margin: auto 30px 0;
+    width: 248px;
   }
 }
 
@@ -125,13 +266,19 @@
   .catalog__title {
     padding-left: 110px;
     margin-left: 0;
+    margin-top: 80px;
   }
 
   .catalog__list {
-    margin: 0 110px;
+    margin: 165px 110px 0;
   }
 
   .catalog__item {
     width: 245px;
+    margin-bottom: 142px;
+  }
+
+  .button.catalog__more-button {
+    width: 166px;
   }
 }
