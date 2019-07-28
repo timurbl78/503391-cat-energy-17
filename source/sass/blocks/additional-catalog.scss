@@ -5,8 +5,8 @@
 }
 
 .additional-catalog__title {
-  margin: 31px 20px 0;
-  padding-bottom: 31px;
+  margin: 28px 20px 0;
+  padding-bottom: 35px;
   font-size: 24px;
   font-weight: normal;
   line-height: 24px;
@@ -30,7 +30,7 @@
 
 .additional-catalog__item-title {
   padding: 0;
-  margin: 15px 0;
+  margin: 12px 0 13px;
   border-bottom: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -40,11 +40,13 @@
 }
 
 .additional-catalog__structure {
+  border-collapse: collapse;
   margin: 0;
   width: 100%;
 }
 
-.additional-catalog__field {
+.additional-catalog__field,
+.additional-catalog__value {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -52,7 +54,41 @@
 
 .additional-catalog__button {
   width: 100%;
-  margin: 14px 0 17px;
+  margin: 13px 0 16px;
+}
+
+.additional-catalog__gift {
+  position: relative;
+  text-align: center;
+  margin: 39px auto 35px;
+  padding: 0 20px;
+  width: 280px;
+  height: 289px;
+  background-color: #71b548;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.additional-catalog__gift-text {
+  margin: 0;
+  padding-top: 187px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.additional-catalog__gift-image {
+  position: absolute;
+  top: 65px;
+  right: 112px;
+  width: 56px;
+  height: 60px;
+}
+
+.additional-catalog__gift-image path {
+  fill: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
