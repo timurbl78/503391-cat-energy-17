@@ -7,13 +7,15 @@
 
 .example__wrapper {
   width: $mobile-width;
-  margin: 42px auto 0;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
 .example__title {
-  margin: 0;
-  padding: 34px 0;
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  padding: 34px 20px;
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
@@ -81,7 +83,8 @@
   }
 
   .example__title {
-    padding: 60px 0;
+    width: 768px;
+    padding: 60px 30px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -124,16 +127,25 @@
   }
 
   .example__wrapper {
-    width: $desktop-width;
+    width: 100%;
     padding: 0;
-  }
-
-  .example__title {
-    padding-left: 110px;
+    margin: 0;
+    background-color: #f2f2f2;
   }
 
   .example__content {
+    width: $desktop-width;
+    margin: 0 auto;
     padding: 76px 110px;
-    background-color: #f2f2f2;
+  }
+
+  .example__title {
+    width: 1440px;
+    background-color: #ffffff;
+    padding: 66px 110px;
+  }
+
+  .example__text {
+    width: 435px;
   }
 }
