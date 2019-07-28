@@ -6,7 +6,7 @@
 }
 
 .example__wrapper {
-  width: 320px;
+  width: $mobile-width;
   margin: 42px auto 0;
   padding: 0 20px;
 }
@@ -75,7 +75,7 @@
   }
 
   .example__wrapper {
-    width: 768px;
+    width: $tablet-width;
     margin: 0 auto;
     padding: 0 30px;
   }
@@ -118,13 +118,13 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .example {
     background-color: #ffffff;
   }
 
   .example__wrapper {
-    width: 1440px;
+    width: $desktop-width;
     padding: 0;
   }
 
