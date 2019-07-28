@@ -1,0 +1,118 @@
+@import "../global/variables";
+
+.additional-catalog {
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.additional-catalog__title {
+  margin: 31px 20px 0;
+  padding-bottom: 31px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  color: $black;
+}
+
+.additional-catalog__list {
+  margin: 0 20px;
+}
+
+.additional-catalog__list:first-child {
+  border-top: 1px solid #cdcdcd;
+}
+
+.additional-catalog__item {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-color: #cdcdcd;
+}
+
+.additional-catalog__item-title {
+  padding: 0;
+  margin: 15px 0;
+  border-bottom: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  color: $black;
+}
+
+.additional-catalog__structure {
+  margin: 0;
+  width: 100%;
+}
+
+.additional-catalog__field {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-catalog__button {
+  width: 100%;
+  margin: 14px 0 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-catalog {
+    width: $tablet-width;
+  }
+
+  .additional-catalog__title {
+    margin: 71px 30px 0;
+    padding-bottom: 75px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional-catalog__list {
+    margin: 0 30px;
+  }
+
+  .additional-catalog__list:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .additional-catalog__item {
+    background-color: #ffffff;
+  }
+
+  .additional-catalog__item-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-catalog__structure {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-catalog {
+    width: $desktop-width;
+  }
+
+  .additional-catalog__wrapper {
+    margin: 75px 110px 88px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-catalog__list {
+    width: 895px;
+    margin: 0;
+  }
+
+  .additional-catalog__button {
+    width: 245px;
+  }
+
+  .additional-catalog__gift {
+    width: 245px;
+    background: #71b548 url("../../img/gift-photo-desktop@1x.jpg") no-repeat;
+    background-size: cover;
+  }
+}
