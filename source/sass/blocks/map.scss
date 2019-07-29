@@ -35,8 +35,8 @@
 
 @media (min-width: $tablet-width) {
   .map__wrapper {
-    margin: 69px auto;
-    padding: 0 30px;
+    margin: 77px auto 0;
+    padding: 64px 71px 50px;
     width: $tablet-width;
   }
 
@@ -45,7 +45,6 @@
     text-align: right;
     font-size: 16px;
     line-height: 20px;
-    padding-right: 40px;
   }
 
   .map__address-town {
@@ -57,7 +56,10 @@
     width: 195px;
     font-size: 20px;
     line-height: 25px;
-    padding-left: 40px;
+  }
+
+  .map iframe {
+    height: 404px;
   }
 }
 

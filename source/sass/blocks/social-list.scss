@@ -1,3 +1,5 @@
+@import "../global/variables";
+
 .social-list {
   display: flex;
   align-items: center;
@@ -27,4 +29,34 @@
 
 .social-list__link-image.st-inst {
   fill: #231f20;
+}
+
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    width: 124px;
+    justify-content: space-between;
+    padding: 5px 0 0;
+    margin-left: 17px;
+  }
+
+  .social-list__item:first-child,
+  .social-list__item:last-child {
+    margin: 0;
+  }
+
+  .social-list__item--vk .social-list__link-image {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social-list__item--inst .social-list__link-image {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-list__item--fb .social-list__link-image {
+    width: 14px;
+    height: 28px;
+  }
 }

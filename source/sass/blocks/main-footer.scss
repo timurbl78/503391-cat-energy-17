@@ -61,9 +61,22 @@
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
     width: $tablet-width;
-    padding: 0 30px;
+    padding: 42px 30px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .main-footer__logo {
+    padding: 16px 0 0;
+  }
+
+  .main-footer__list {
+    padding: 0;
+    border: none;
+  }
+
+  .main-footer__copy {
+    padding: 0;
   }
 }
 
