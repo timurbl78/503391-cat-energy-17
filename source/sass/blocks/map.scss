@@ -70,12 +70,16 @@
 
   .map__wrapper {
     margin: 0;
-    padding: 60px 75px;
+    padding: 62px 49px 60px 75px;
     z-index: 1;
     background-color: #ffffff;
     position: absolute;
     top: 95px;
     left: 110px;
     width: 570px;
+  }
+
+  .map__address {
+    text-align: left;
   }
 }
