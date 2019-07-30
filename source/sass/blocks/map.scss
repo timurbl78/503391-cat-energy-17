@@ -1,18 +1,21 @@
 @import "../global/variables";
 
 .map {
-  width: $mobile-width;
   font-family: "Oswald", "Arial", sans-serif;
+  background-color: #f2f2f2;
 }
 
 .map__wrapper {
-  margin-top: 30px;
-  margin-bottom: 25px;
+  width: $mobile-width;
+  margin: 35px auto 25px;
+  padding: 28px 20px 0;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .map__address {
+  margin: 0;
   width: 50%;
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -21,10 +24,62 @@
 }
 
 .map__title {
+  margin: 0;
   width: 50%;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .map__wrapper {
+    margin: 77px auto 0;
+    padding: 64px 71px 50px;
+    width: $tablet-width;
+  }
+
+  .map__address {
+    width: 195px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .map__address-town {
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .map__title {
+    width: 195px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .map iframe {
+    height: 404px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    position: relative;
+  }
+
+  .map__wrapper {
+    margin: 0;
+    padding: 62px 49px 60px 75px;
+    z-index: 1;
+    background-color: #ffffff;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+  }
+
+  .map__address {
+    text-align: left;
+  }
 }
