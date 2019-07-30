@@ -12,6 +12,11 @@
   height: 65px;
 }
 
+.main-header__logo-image {
+  width: 194px;
+  height: 38px;
+}
+
 .main-header__menu {
   position: relative;
 }
@@ -118,6 +123,11 @@
     width: auto;
     height: auto;
   }
+
+  .main-header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -132,5 +142,10 @@
 
   .main-header__wrapper {
     margin: 0 110px;
+  }
+
+  .main-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }
