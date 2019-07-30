@@ -7,27 +7,31 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header header">
-      <div class="main-header__wrapper">
-        <a href="#" class="main-header__logo">
-          <img src="https://via.placeholder.com/192x65" alt="">
-        </a>
-        <nav class="main-header__menu main-menu">
-          <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-menu__list site-list">
-            <li class="site-list__item">
-              <a href="index.html" class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html" class="site-list__link site-list__link--active">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <header class="main-header header">
+    <div class="main-header__wrapper">
+      <a href="#" class="main-header__logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" alt="Логотип">
+        </picture>
+      </a>
+      <nav class="main-header__menu main-menu">
+        <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-menu__list site-list">
+          <li class="site-list__item">
+            <a href="index.html" class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link site-list__link--active">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
     <main class="main-form">
       <h1 class="main-form__title">Подбор программы</h1>
       <p class="main-form__about">
@@ -96,26 +100,33 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__logo logo-title">
-          <svg class="main-footer__logo-image" width="130" height="24"></svg>
-        </div>
-        <ul class="main-footer__list social-list">
-          <li class="social-list__item">
-            <a href="#" class="social-list__link"><img class="social-list__link-image" src="http://placehold.it/23x17" alt="vk"></a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link"><img class="social-list__link-image" src="http://placehold.it/23x17" alt="instagram"></a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link"><img class="social-list__link-image" src="http://placehold.it/23x17" alt="facebook"></a>
-          </li>
-        </ul>
-        <div class="main-footer__copy">
-          <a href="#" class="main-footer__copy-link">HTML Academy <img class="main-footer__copy-image" src="http://placehold.it/50x50" alt="HTML Academy"></a>
-        </div>
+    <div class="main-footer__wrapper">
+      <div class="main-footer__logo logo-title">
+        <img class="main-footer__logo-image" src="img/logo-footer.svg" width="130" height="24" alt="Логотип">
       </div>
-    </footer>
+      <ul class="main-footer__list social-list">
+        <li class="social-list__item social-list__item--vk">
+          <a href="#" class="social-list__link">
+            <img class="social-list__link-image" src="img/icon-vk.svg" width="22" height="12" alt="vk">
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--inst">
+          <a href="#" class="social-list__link">
+            <img class="social-list__link-image" src="img/icon-insta.svg" width="16" height="16" alt="insta">
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--fb">
+          <a href="#" class="social-list__link">
+            <img class="social-list__link-image" src="img/icon-fb.svg" width="10" height="19" alt="facebook">
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__copy">
+        <a href="#" class="main-footer__copy-link">HTML Academy <img width="27" height="34" class="main-footer__copy-image" src="img/htmlacademy-upd.svg" alt="HTML Academy"></a>
+      </div>
+    </div>
+  </footer>
+    <script src="js/picturefill.js"></script>
     <script src="js/mobile-navigation.js"></script>
   </body>
 </html>

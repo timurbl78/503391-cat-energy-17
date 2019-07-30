@@ -80,14 +80,10 @@
   padding: 0 20px 23px;
 }
 
-.catalog__more svg {
+.catalog__more-image {
   margin: 26px 0 25px;
   width: 30px;
   height: 30px;
-}
-
-.catalog__more .st0 {
-  fill: #d3d3d3;
 }
 
 .catalog__more-title {
@@ -189,8 +185,6 @@
 
   .catalog__image {
     margin-top: -46px;
-    /*временно*/
-    display: none;
     width: 324px;
     height: 208px;
   }
@@ -224,14 +218,10 @@
     background-color: #ffffff;
   }
 
-  .catalog__more svg {
+  .catalog__more-image {
     margin: 54px 0 49px;
     width: 60px;
     height: 60px;
-  }
-
-  .catalog__more .st0 {
-    fill: #e8e8e8;
   }
 
   .catalog__more-title {
