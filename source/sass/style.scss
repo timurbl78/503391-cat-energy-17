@@ -3,15 +3,22 @@
 @import "global/fonts";
 @import "global/variables";
 @import "blocks/button";
+@import "blocks/title";
 @import "blocks/site-list";
 @import "blocks/main-header";
 @import "blocks/get-program";
 @import "blocks/types";
 @import "blocks/about";
+@import "blocks/example";
 @import "blocks/main-footer";
 /*----catalog----*/
 @import "blocks/header";
 @import "blocks/catalog";
+@import "blocks/additional-catalog";
+/*-----form------*/
+@import "blocks/main-form";
+@import "blocks/questionnaire";
 /*------*/
 @import "blocks/map";
 @import "blocks/social-list";
+/*-----*/

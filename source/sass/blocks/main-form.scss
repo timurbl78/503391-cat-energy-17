@@ -1,0 +1,38 @@
+@import "../global/variables";
+
+.main-form {
+  width: $mobile-width;
+  margin: 0 auto;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.main-form__title {
+  margin: 30px 20px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+  color: $black;
+}
+
+.main-form__about {
+  margin: 0 20px 9px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form {
+    width: $tablet-width;
+  }
+
+  .main-form__title {
+    font-size: 60px;
+  }
+
+  .main-form__about {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
