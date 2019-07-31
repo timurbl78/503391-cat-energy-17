@@ -137,10 +137,6 @@
     line-height: 20px;
   }
 
-  .additional-catalog__value {
-    justify-content: flex-end;
-  }
-
   .additional-catalog__structure tr {
     border: none;
   }
@@ -153,7 +149,7 @@
   .additional-catalog__value {
     margin-right: 0;
     width: 95px;
-    justify-content: right;
+    justify-content: flex-end;
   }
 
   .additional-catalog__button {
