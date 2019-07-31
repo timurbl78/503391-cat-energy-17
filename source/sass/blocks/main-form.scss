@@ -1,6 +1,6 @@
 @import "../global/variables";
 
-.main-form {
+.main-form__wrapper {
   width: $mobile-width;
   margin: 0 auto;
   font-family: "Oswald", "Arial", sans-serif;
@@ -23,16 +23,35 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-form {
+  .main-form__wrapper {
     width: $tablet-width;
   }
 
   .main-form__title {
+    margin-top: 55px;
     font-size: 60px;
+    margin-left: 30px;
   }
 
   .main-form__about {
+    margin-left: 70px;
+    margin-bottom: 39px;
+    margin-top: 55px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form__wrapper {
+    width: $desktop-width;
+  }
+
+  .main-form__title {
+    margin-left: 110px;
+  }
+
+  .main-form__about {
+    margin-left: 110px;
   }
 }
