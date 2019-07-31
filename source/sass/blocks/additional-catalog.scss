@@ -137,6 +137,10 @@
     line-height: 20px;
   }
 
+  .additional-catalog__value {
+    justify-content: flex-end;
+  }
+
   .additional-catalog__structure tr {
     border: none;
   }
@@ -222,8 +226,12 @@
     margin: 0 35px 0 auto;
   }
 
+  .additional-catalog__structure tr {
+    align-items: center;
+  }
+
   .additional-catalog__value {
-    width: 46px;
+    width: 49px;
     justify-content: left;
   }
 

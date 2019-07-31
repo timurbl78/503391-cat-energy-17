@@ -8,13 +8,22 @@
 
 .main-header__logo {
   display: block;
-  width: 100%;
+  width: 220px;
   height: 65px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__logo-image {
   width: 194px;
   height: 38px;
+  margin: 12px 0 0 18px;
 }
 
 .main-header__menu {
@@ -127,6 +136,7 @@
   .main-header__logo-image {
     width: 173px;
     height: 58px;
+    margin: 0;
   }
 }
 
