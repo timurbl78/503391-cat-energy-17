@@ -87,10 +87,6 @@
   height: 60px;
 }
 
-.additional-catalog__gift-image path {
-  fill: #ffffff;
-}
-
 @media (min-width: $tablet-width) {
   .additional-catalog {
     width: $tablet-width;
@@ -153,7 +149,7 @@
   .additional-catalog__value {
     margin-right: 0;
     width: 95px;
-    justify-content: right;
+    justify-content: flex-end;
   }
 
   .additional-catalog__button {
@@ -226,8 +222,12 @@
     margin: 0 35px 0 auto;
   }
 
+  .additional-catalog__structure tr {
+    align-items: center;
+  }
+
   .additional-catalog__value {
-    width: 46px;
+    width: 49px;
     justify-content: left;
   }
 

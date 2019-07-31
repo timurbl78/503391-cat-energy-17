@@ -1,4 +1,5 @@
 @import "../global/variables";
+@import "../global/mixins";
 
 .types {
   margin: 2px auto 0;
@@ -8,11 +9,9 @@
 }
 
 .types__list {
-  margin: 0;
-  padding: 0;
+  @include list-style;
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
 }
 
 .types__item {

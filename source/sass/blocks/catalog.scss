@@ -1,4 +1,5 @@
 @import "../global/variables";
+@import "../global/mixins";
 
 .catalog {
   margin: 0 auto;
@@ -18,9 +19,7 @@
 }
 
 .catalog__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  @include list-style;
 }
 
 .catalog__item {
@@ -29,6 +28,15 @@
   border-bottom: 1px solid #ededed;
   display: flex;
   flex-wrap: wrap;
+}
+
+.catalog__item picture {
+  height: 144px;
+}
+
+.catalog__image {
+  width: 140px;
+  height: 144px;
 }
 
 .catalog__item-info {
@@ -80,14 +88,15 @@
   padding: 0 20px 23px;
 }
 
-.catalog__more svg {
-  margin: 26px 0 25px;
+.catalog__more picture {
   width: 30px;
   height: 30px;
+  margin: 26px 0 25px;
 }
 
-.catalog__more .st0 {
-  fill: #d3d3d3;
+.catalog__more-image {
+  width: 30px;
+  height: 30px;
 }
 
 .catalog__more-title {
@@ -175,7 +184,7 @@
   .catalog__item-title {
     font-size: 20px;
     line-height: 20px;
-    margin-top: 163px;
+    margin-top: 36px;
     margin-bottom: 20px;
 
     & br:last-of-type {
@@ -187,12 +196,20 @@
     }
   }
 
+  .catalog__item picture {
+    margin-top: -81px;
+    height: 208px;
+  }
+
   .catalog__image {
-    margin-top: -46px;
-    /*временно*/
-    display: none;
+    margin-top: 0;
     width: 324px;
     height: 208px;
+
+    &--small {
+      margin-top: 36px;
+      height: 172px;
+    }
   }
 
   .catalog__structure {
@@ -224,14 +241,15 @@
     background-color: #ffffff;
   }
 
-  .catalog__more svg {
+  .catalog__more picture {
     margin: 54px 0 49px;
     width: 60px;
     height: 60px;
   }
 
-  .catalog__more .st0 {
-    fill: #e8e8e8;
+  .catalog__more-image {
+    width: 60px;
+    height: 60px;
   }
 
   .catalog__more-title {
@@ -276,6 +294,21 @@
   .catalog__item {
     width: 245px;
     margin-top: 142px;
+  }
+
+  .catalog__image {
+    margin-top: 0;
+    width: 245px;
+    height: 208px;
+
+    &--small {
+      margin-top: 36px;
+      height: 172px;
+    }
+  }
+
+  .catalog__value {
+    margin-right: -3px;
   }
 
   .button.catalog__more-button {

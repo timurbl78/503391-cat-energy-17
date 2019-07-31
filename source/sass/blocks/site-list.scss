@@ -1,10 +1,9 @@
 @import "../global/variables";
+@import "../global/mixins";
 
 .site-list {
+  @include list-style;
   position: relative; /*for toggle*/
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-direction: column;
 }
