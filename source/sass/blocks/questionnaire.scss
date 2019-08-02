@@ -6,6 +6,7 @@
 }
 
 .questionnaire__fieldset {
+  margin: 0;
   padding: 0;
   border: none;
 }
@@ -27,6 +28,7 @@
 }
 
 .questionnaire__radio-label {
+  margin: 6px 20px;
   position: relative;
   height: 30px;
   padding-left: 45px;
@@ -60,6 +62,7 @@
   height: 30px;
 
   &::after {
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 0;
@@ -82,19 +85,19 @@
 }
 
 .questionnaire__checkbox-wrapper {
+  margin-top: -9px;
   display: flex;
   flex-direction: column;
 }
 
 .questionnaire__input {
   width: 100px;
-  height: 50px;
   margin-left: 15px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   flex-grow: 1;
-  padding: 15px 16px;
+  padding: 13px 16px;
   border: 1px solid $input-border-color;
   text-transform: uppercase;
 }
@@ -107,25 +110,39 @@
   border-bottom: 1px solid #ededed;
 }
 
+.questionnaire__main-info {
+  padding-bottom: 18px;
+}
+
 .questionnaire__radio-section {
   padding-top: 14px;
 }
 
 .questionnaire__legend {
-  margin-top: 31px;
-  margin-bottom: 23px;
+  margin-top: 30px;
+  margin-bottom: 36px;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
   color: $black;
+
+  &--two-lines {
+    margin-bottom: 12px;
+  }
 }
 
 .questionnaire__contacts {
+  margin-top: 11px;
   display: flex;
   flex-direction: column;
 }
 
+.questionnaire__contacts .questionnaire__label:last-child {
+  margin-bottom: 0;
+}
+
 .questionnaire__input--email {
+  margin-left: 11px;
   padding-right: 32px;
   background-image: url("../../img/icon-mail.svg");
   background-repeat: no-repeat;
@@ -134,6 +151,7 @@
 }
 
 .questionnaire__input--tel {
+  margin-left: 11px;
   padding-right: 32px;
   background-image: url("../../img/icon-phone.svg");
   background-repeat: no-repeat;
@@ -144,8 +162,8 @@
 .questionnaire__textarea {
   width: 280px;
   height: 150px;
-  padding: 15px 14px;
-  margin: 0 20px;
+  padding: 12px 14px;
+  margin: 0 20px -3px;
   border: 1px solid $input-border-color;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -155,9 +173,11 @@
 }
 
 .questionnaire__button {
+  font-size: 16px;
+  line-height: 20px;
   border: none;
   width: calc(100% - 40px);
-  margin: 27px 20px 24px;
+  margin: 22px 20px 20px;
 }
 
 .questionnaire__star {

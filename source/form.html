@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sass/blocks/main-footer.scss">
   </head>
   <body>
     <header class="main-header header">
@@ -48,7 +49,7 @@
               <label class="questionnaire__label" for="weight">Вес (кг):*
                 <input class="questionnaire__input" type="text" id="weight" name="wight" placeholder="7" required>
               </label>
-              <label class="questionnaire__label" for="age">Возраст (лет):*
+              <label class="questionnaire__label" for="age">Возраст (лет):
                 <input class="questionnaire__input" type="text" id="age" name="age" placeholder="7" required>
               </label>
             </div>
@@ -71,10 +72,10 @@
           </fieldset>
           <fieldset class="questionnaire__fieldset questionnaire__fieldset--flex">
             <div class="title-wrapper">
-              <span class="title-line title-line--left"></span><h2 class="questionnaire__legend title">Контактные данные<br> (владельца кота)</h2><span class="title-line title-line--right"></span>
+              <span class="title-line title-line--left"></span><h2 class="questionnaire__legend questionnaire__legend--two-lines title">Контактные данные<br> (владельца кота)</h2><span class="title-line title-line--right"></span>
             </div>
             <div class="questionnaire__contacts">
-              <label class="questionnaire__label" for="email">Email:*
+              <label class="questionnaire__label" for="email">E-mail:*
                 <input class="questionnaire__input questionnaire__input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
               </label>
               <label class="questionnaire__label" for="tel">Телефон:*
