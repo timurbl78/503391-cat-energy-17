@@ -38,6 +38,18 @@
   text-transform: uppercase;
 }
 
+.map__image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: $tablet-width - 1) {
+  .map__image {
+    height: 362px;
+    width: 320px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .map {
     margin-top: 77px;
