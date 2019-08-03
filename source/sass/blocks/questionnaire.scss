@@ -57,9 +57,10 @@
 }
 
 .questionnaire__checkbox-label {
+  padding-top: 6px;
+  padding-bottom: 6px;
   padding-left: 45px;
   position: relative;
-  height: 30px;
 
   &::after {
     box-sizing: border-box;
@@ -194,6 +195,7 @@
 @media (min-width: $tablet-width) {
   .questionnaire {
     width: $tablet-width;
+    margin-top: 56px;
   }
 
   .questionnaire__label {
@@ -202,29 +204,73 @@
     margin: 10px 70px;
   }
 
+  .questionnaire__input {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 20px;
+    margin-left: 17px;
+  }
+
   .questionnaire__main-info {
     border-bottom: none;
     padding: 0;
   }
 
   .questionnaire__radio-section {
-    margin: 62px 70px;
+    margin: 62px 70px 46px;
+    padding-top: 20px;
+    padding-bottom: 19px;
     border: 1px solid #e6e6e6;
   }
 
   .questionnaire__radio-label {
+    height: auto;
     margin: 6px 28px;
+    padding: 10px 0 10px 59px;
+
+    &::after {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .questionnaire__radio:checked + label::before {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
   }
 
   .questionnaire__textarea {
+    margin: 35px 70px 36px;
+    padding: 10px 18px;
+    font-size: 20px;
+    line-height: 30px;
     width: 630px;
     height: 174px;
-    margin: 48px 70px 38px;
   }
 
   .questionnaire__legend {
+    margin-bottom: 40px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .questionnaire__contacts {
+    margin-top: 26px;
+    margin-bottom: 36px;
+  }
+
+  .questionnaire__input--email {
+    padding: 15px 40px 15px 20px;
+    margin-left: 20px;
+    background-position: top 19px right 15px;
+  }
+
+  .questionnaire__input--tel {
+    padding: 15px 40px 15px 19px;
+    margin-left: 14px;
+    background-position: top 17px right 12px;
   }
 
   .questionnaire__legend br {
@@ -232,22 +278,40 @@
   }
 
   .questionnaire__checkbox-wrapper {
+    margin-top: 0;
+    padding: 0 70px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 70px;
     justify-content: space-between;
+    flex-direction: row;
   }
 
   .questionnaire__checkbox-label {
+    padding: 10px 0 10px 58px;
     width: 284px;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 16px 0;
+    flex-grow: 0;
+
+    &::after {
+      width: 40px;
+      height: 40px;
+    }
   }
 
+  .questionnaire__checkbox:checked + label::before {
+    top: 13px;
+    left: 10px;
+  }
+
+
   .questionnaire__button {
+    font-size: 20px;
+    line-height: 20px;
     width: 284px;
+    margin-top: 39px;
     margin-left: 70px;
     margin-right: 60px;
+    padding: 16px 0;
   }
 
   .questionnaire__star {
