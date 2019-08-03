@@ -81,6 +81,10 @@
     position: relative;
   }
 
+  .main-form__wrapper + .map {
+    margin-top: 84px;
+  }
+
   .map__wrapper {
     margin: 0;
     padding: 62px 49px 60px 75px;

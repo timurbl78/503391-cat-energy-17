@@ -92,6 +92,7 @@
 }
 
 .questionnaire__input {
+  height: 45px;
   width: 100px;
   margin-left: 15px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -205,6 +206,7 @@
   }
 
   .questionnaire__input {
+    height: 52px;
     font-size: 20px;
     line-height: 20px;
     padding: 15px 20px;
@@ -335,6 +337,14 @@
     justify-content: space-between;
   }
 
+  .questionnaire__main-fieldset {
+    margin-bottom: 38px;
+  }
+
+  .questionnaire__legend {
+    margin-top: 31px;
+  }
+
   .questionnaire__main-info,
   .questionnaire__radio-section {
     width: 570px;
@@ -344,8 +354,12 @@
     margin-left: 110px;
   }
 
+  .questionnaire__main-info .questionnaire__label:last-child {
+    margin-bottom: 0;
+  }
+
   .questionnaire__radio-section {
-    margin: 0 110px 0 0;
+    margin: 10px 110px 0 0;
   }
 
   .questionnaire__label:not(.questionnaire__radio-label):not(.questionnaire__checkbox-label) {
@@ -360,20 +374,17 @@
     margin-right: 0;
   }
 
-  .questionnaire__radio-label::after {
-    top: 9px;
-  }
-
-  .questionnaire__radio:checked + label::before {
-    top: 18px;
-  }
-
   .questionnaire__contacts {
+    margin-bottom: 28px;
     width: 100%;
     margin-left: 110px;
     margin-right: 110px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .questionnaire__contacts .questionnaire__label:last-child {
+    margin-top: 0;
   }
 
   .questionnaire__textarea {
@@ -397,8 +408,7 @@
   }
 
   .questionnaire__button {
-    margin-left: 110px;
-    margin-right: 80px;
+    margin: 45px 80px 0 110px;
     width: 570px;
   }
 }
