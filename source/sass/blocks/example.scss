@@ -1,6 +1,7 @@
 @import "../global/variables";
 
 .example {
+  margin-top: 42px;
   font-family: "Oswald", "Arial", sans-serif;
   background-color: #f2f2f2;
 }
@@ -32,7 +33,27 @@
   color: $grey;
 }
 
+.example__info {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example__info-item {
+  width: 124px;
+  height: 56px;
+  position: relative;
+  margin-bottom: 35px;
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .example__info-value {
+  position: relative;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 24px;
@@ -41,24 +62,72 @@
 }
 
 .example__info-field {
+  z-index: 10;
+  position: absolute;
+  bottom: -12px;
+  left: 22px;
+  display: block;
+  text-align: center;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   font-weight: normal;
   color: $grey;
+  padding: 0 15px;
+  background-color: #f2f2f2;
 }
 
 .example__price {
+  width: 100%;
   display: block;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
+  font-weight: normal;
   color: $black;
 }
 
 .example__price br {
   display: none;
+}
+
+.example__changes {
+  margin-top: 44px;
+  height: 240px;
+  width: 320px;
+  position: relative;
+}
+
+.example__image-before,
+.example__image-after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.example__image-before {
+  z-index: 20;
+  width: 100%;
+  background-image: url("../../img/before-tablet@1x.png");
+
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/before-mobile@2x.png");
+    background-size: 320px 240px;
+  }
+}
+
+/*-------slider------*/
+
+
+.example__slider-range {
+  padding-top: 35px;
+  padding-bottom: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .example__prev,
@@ -67,6 +136,28 @@
   font-size: 16px;
   line-height: 20px;
   color: $black;
+}
+
+.example__range {
+  position: relative;
+  margin: 0 19px;
+  width: 84px;
+  height: 14px;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  background-color: #ffffff;
+
+  &::after {
+    z-index: 1;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    content: "";
+    height: 6px;
+    width: 35px;
+    background-color: $green;
+    border-radius: 5px;
+  }
 }
 
 @media (min-width: $tablet-width) {
