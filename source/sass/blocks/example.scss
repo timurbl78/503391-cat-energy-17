@@ -213,7 +213,7 @@
   .example__info {
     margin-top: 54px;
     margin-bottom: 0;
-    justify-content: left;
+    justify-content: flex-start;
   }
 
   .example__info-item {
@@ -348,13 +348,14 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    background-color: #ffffff;
     border-top: none;
-    background-color: #f2f2f2;
   }
 
   .example__main-wrapper {
-    width: 1220px;
+    background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    width: 1440px;
+    padding: 0 110px;
     margin: 0 auto;
     display: flex;
   }
