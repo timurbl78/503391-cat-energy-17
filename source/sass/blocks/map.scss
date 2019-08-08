@@ -3,7 +3,11 @@
 .map {
   margin-top: 35px;
   font-family: "Oswald", "Arial", sans-serif;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+}
+
+.example + .map {
+  margin-top: 0;
 }
 
 .main-form__wrapper + .map {
@@ -71,6 +75,10 @@
 
   .main-form__wrapper + .map {
     margin-top: 52px;
+  }
+
+  .example + .map {
+    margin-top: 0;
   }
 
   .map__wrapper {
