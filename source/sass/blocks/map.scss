@@ -3,7 +3,13 @@
 .map {
   margin-top: 35px;
   font-family: "Oswald", "Arial", sans-serif;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .map--white {
+    background-color: #ffffff;
+  }
 }
 
 .example + .map {
@@ -78,12 +84,13 @@
   }
 
   .example + .map {
+    background-color: #ffffff;
     margin-top: 0;
   }
 
   .map__wrapper {
     margin: 0 auto;
-    padding: 64px 71px 50px;
+    padding: 64px 71px 59px;
     width: $tablet-width;
   }
 
