@@ -383,8 +383,12 @@
 
   .example__main-wrapper {
     background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
-    width: 1440px;
-    padding: 0 110px;
+    width: 100%;
+  }
+
+  .example__main-content {
+    width: $desktop-width;
+    padding: 0 40px;
     margin: 0 auto;
     display: flex;
   }
@@ -414,7 +418,7 @@
   .example__title {
     width: 1440px;
     background-color: #ffffff;
-    padding: 30px 110px 75px;
+    padding: 30px 40px 75px;
   }
 
   .example__text {

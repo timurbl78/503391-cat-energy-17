@@ -148,8 +148,14 @@
     background-color: #ffffff;
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 40px;
     width: 570px;
+  }
+
+  .map__content {
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
   }
 
   .map__address {

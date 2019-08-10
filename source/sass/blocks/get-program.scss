@@ -95,21 +95,33 @@
     margin: 0 auto;
     height: 696px;
     width: 100%;
-    background-image: url("../../img/index-can-desktop@1x.png"), url("../../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: top 142px left 560px, right;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50% 696px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-can-desktop@2x.png"), url("../../img/index-background-desktop@2x.jpg");
+      background-image: url("../../img/index-background-desktop@2x.jpg");
       /*background-size: 552px 449px, 720px 796px;*/
-      background-size: 552px 449px, 50%;
+      background-size: 50% 696px;
     }
   }
 
   .get-program__wrapper {
     width: $desktop-width;
-    margin: 0;
-    padding: 222px 0 0 190px;
+    margin: 0 auto;
+    padding: 222px 0 100px 120px;
+
+    background-image: url("../../img/index-can-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: top 142px left 490px;
+    background-size: 552px 449px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-can-desktop@2x.png");
+      /*background-size: 552px 449px, 720px 796px;*/
+      background-size: 552px 449px;
+    }
   }
 
   .get-program__title {

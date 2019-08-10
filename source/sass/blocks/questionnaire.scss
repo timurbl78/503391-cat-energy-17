@@ -120,7 +120,8 @@
   }
 
   &:active,
-  &::selection {
+  &::selection,
+  &:focus {
     border: 2px solid $grey;
   }
 
@@ -177,7 +178,8 @@
 
 .questionnaire__input--email,
 .questionnaire__input--tel {
-  &:active + .questionnaire__input-image {
+  &:active + .questionnaire__input-image,
+  &:focus + .questionnaire__input-image {
     fill: $green;
   }
 
@@ -389,7 +391,7 @@
   }
 
   .questionnaire__main-info {
-    margin-left: 110px;
+    margin-left: 40px;
   }
 
   .questionnaire__main-info .questionnaire__label:last-child {
@@ -397,7 +399,7 @@
   }
 
   .questionnaire__radio-section {
-    margin: 10px 110px 0 0;
+    margin: 10px 40px 0 0;
   }
 
   .questionnaire__label:not(.questionnaire__radio-label):not(.questionnaire__checkbox-label) {
@@ -415,8 +417,8 @@
   .questionnaire__contacts {
     margin-bottom: 28px;
     width: 100%;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: 40px;
+    margin-right: 40px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -428,8 +430,8 @@
   .questionnaire__textarea {
     width: 1220px;
     height: 174px;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .questionnaire__input--email + .questionnaire__input-image {
@@ -445,8 +447,8 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .questionnaire__checkbox-label {
@@ -454,7 +456,7 @@
   }
 
   .questionnaire__button {
-    margin: 45px 80px 0 110px;
+    margin: 45px 80px 0 40px;
     width: 570px;
   }
 }
