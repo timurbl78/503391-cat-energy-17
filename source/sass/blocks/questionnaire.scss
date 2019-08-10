@@ -2,7 +2,7 @@
 
 .questionnaire {
   width: $mobile-width;
-  margin: 30px auto 0;
+  margin: 34px auto 0;
 }
 
 .questionnaire__fieldset {
@@ -17,6 +17,7 @@
 }
 
 .questionnaire__label {
+  position: relative;
   margin: 7px 20px;
   flex-grow: 1;
   display: flex;
@@ -42,6 +43,17 @@
     height: 30px;
     border-radius: 50%;
     border: 1px solid #cecece;
+  }
+}
+
+.questionnaire__radio-label,
+.questionnaire__checkbox-label {
+  &:hover::after {
+    border-color: #bcbcbc;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -102,6 +114,20 @@
   padding: 13px 16px;
   border: 1px solid $input-border-color;
   text-transform: uppercase;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:active,
+  &::selection {
+    border: 2px solid $grey;
+  }
+
+  &::grammar-error,
+  &::spelling-error {
+    border: 2px solid $error-color;
+  }
 }
 
 .questionnaire__radio-section,
@@ -143,22 +169,32 @@
   margin-bottom: 0;
 }
 
+.questionnaire__input-image {
+  position: absolute;
+  right: 11px;
+  top: 14px;
+}
+
+.questionnaire__input--email,
+.questionnaire__input--tel {
+  &:active + .questionnaire__input-image {
+    fill: $green;
+  }
+
+  &::spelling-error + .questionnaire__input-image,
+  &::grammar-error + .questionnaire__input-image {
+    fill: $error-color;
+  }
+}
+
 .questionnaire__input--email {
   margin-left: 11px;
   padding-right: 32px;
-  background-image: url("../../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-size: 17px 13px;
-  background-position: top 18px right 10px;
 }
 
 .questionnaire__input--tel {
   margin-left: 11px;
   padding-right: 32px;
-  background-image: url("../../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: top 14px right 8px;
 }
 
 .questionnaire__textarea {
@@ -263,16 +299,18 @@
     margin-bottom: 36px;
   }
 
+  .questionnaire__input-image {
+    top: 18px;
+  }
+
   .questionnaire__input--email {
     padding: 15px 40px 15px 20px;
     margin-left: 20px;
-    background-position: top 19px right 15px;
   }
 
   .questionnaire__input--tel {
     padding: 15px 40px 15px 19px;
     margin-left: 14px;
-    background-position: top 17px right 12px;
   }
 
   .questionnaire__legend br {
@@ -392,6 +430,14 @@
     height: 174px;
     margin-left: 110px;
     margin-right: 110px;
+  }
+
+  .questionnaire__input--email + .questionnaire__input-image {
+    top: 20px;
+  }
+
+  .questionnaire__input--tel + .questionnaire__input-image {
+    top: 26px;
   }
 
   .questionnaire__checkbox-wrapper {
