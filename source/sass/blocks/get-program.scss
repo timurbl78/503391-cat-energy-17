@@ -8,12 +8,12 @@
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
   background-color: #ffffff;
-  background-image: url("../../img/index-can-mobile@1x.png"), url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: right 20px bottom 43px, top;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/index-can-mobile@2x.png"), url("../../img/index-background-mobile@2x.jpg");
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
     background-size: 280px 271px, 320px 305px;
   }
 }
@@ -49,12 +49,12 @@
     text-align: left;
     width: $tablet-width;
     height: 810px;
-    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: left 30px bottom 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-can-tablet@2x.jpg");
+      background-image: url("../img/index-can-tablet@2x.jpg");
       background-size: 709px 609px;
     }
   }
@@ -95,13 +95,13 @@
     margin: 0 auto;
     height: 696px;
     width: 100%;
-    background-image: url("../../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, $green 50%);
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, $green 50%);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50% 696px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff 50%, $green 50%);
+      background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff 50%, $green 50%);
       /*background-size: 552px 449px, 720px 796px;*/
       background-size: 50% 696px;
     }
@@ -112,13 +112,13 @@
     margin: 0 auto;
     padding: 222px 0 100px 120px;
 
-    background-image: url("../../img/index-can-desktop@1x.png");
+    background-image: url("../img/index-can-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: top 142px left 490px;
     background-size: 552px 449px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-can-desktop@2x.png");
+      background-image: url("../img/index-can-desktop@2x.png");
       /*background-size: 552px 449px, 720px 796px;*/
       background-size: 552px 449px;
     }
