@@ -1,14 +1,1 @@
-const navMain = document.querySelector('.main-menu');
-const navToggle = document.querySelector('.main-menu__toggle');
-
-navMain.classList.add('main-menu--closed');
-
-navToggle.addEventListener('click', () => {
-  if (navMain.classList.contains('main-menu--closed')) {
-    navMain.classList.remove('main-menu--closed');
-    navMain.classList.add('main-menu--opened');
-  } else {
-    navMain.classList.add('main-menu--closed');
-    navMain.classList.remove('main-menu--opened');
-  }
-});
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('G(j(p,a,c,k,e,d){e=j(c){i c.m(O)};l(!\'\'.o(/^/,N)){q(c--)d[c.m(a)]=k[c]||c.m(a);k=[j(e){i d[e]}];e=j(){i\'\\\\w+\'};c=1};q(c--)l(k[c])p=p.o(I H(\'\\\\b\'+e(c)+\'\\\\b\',\'g\'),k[c]);i p}(\'9 1=8.a(\\\'.0-2\\\');9 b=8.a(\\\'.0-e\\\');1.3.5(\\\'0-2--4\\\');b.c(\\\'d\\\',()=>{f(1.3.h(\\\'0-2--4\\\')){1.3.7(\\\'0-2--4\\\');1.3.5(\\\'0-2--6\\\')}g{1.3.5(\\\'0-2--4\\\');1.3.7(\\\'0-2--6\\\')}});\',n,n,\'D|C|B|r|z|y|x|v|u|t|s|M|L|K|J|l|E|A\'.F(\'|\'),0,{}))',51,51,'||||||||||||||||||return|function||if|toString|18|replace||while|classList|querySelector|const|document|remove||opened|add|closed|contains|menu|navMain|main|else|split|eval|RegExp|new|menu__toggle|click|addEventListener|navToggle|String|36'.split('|'),0,{}))
