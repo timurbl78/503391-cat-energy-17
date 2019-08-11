@@ -110,17 +110,17 @@
   .get-program__wrapper {
     width: $desktop-width;
     margin: 0 auto;
-    padding: 222px 0 100px 120px;
+    padding: 222px 0 150px 120px;
 
     background-image: url("../img/index-can-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: top 142px left 490px;
-    background-size: 552px 449px;
+    background-size: 552px 500px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-desktop@2x.png");
       /*background-size: 552px 449px, 720px 796px;*/
-      background-size: 552px 449px;
+      background-size: 552px 500px;
     }
   }
 

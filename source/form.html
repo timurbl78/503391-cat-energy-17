@@ -41,9 +41,11 @@
         <p class="main-form__about">
           Заполните анкету и мы подберем<br> программу питания для вашего кота
         </p>
-        <form class="questionnaire" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="questionnaire__fieldset questionnaire__main-fieldset">
-            <legend class="visually-hidden">Основная информация</legend>
+      </div>
+      <form class="questionnaire" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="questionnaire__fieldset questionnaire__main-fieldset">
+          <legend class="visually-hidden">Основная информация</legend>
+          <div class="questionnaire__wrapper">
             <div class="questionnaire__main-info">
               <label class="questionnaire__label" for="name">Имя:*
                 <input class="questionnaire__input" type="text" id="name" name="name" placeholder="Барсик" required>
@@ -71,11 +73,13 @@
                 Не знаю (нужен ваш совет)
               </label>
             </div>
-          </fieldset>
-          <fieldset class="questionnaire__fieldset questionnaire__fieldset--flex">
-            <div class="title-wrapper">
-              <span class="title-line title-line--left"></span><h2 class="questionnaire__legend questionnaire__legend--two-lines title">Контактные данные<br> (владельца кота)</h2><span class="title-line title-line--right"></span>
-            </div>
+          </div>
+        </fieldset>
+        <fieldset class="questionnaire__fieldset questionnaire__fieldset--flex">
+          <div class="title-wrapper">
+            <span class="title-line title-line--left"></span><h2 class="questionnaire__legend questionnaire__legend--two-lines title">Контактные данные<br> (владельца кота)</h2><span class="title-line title-line--right"></span>
+          </div>
+          <div class="questionnaire__wrapper">
             <div class="questionnaire__contacts">
               <label class="questionnaire__label" for="email">E-mail:*
                 <input class="questionnaire__input questionnaire__input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -94,19 +98,23 @@
                 </svg>
               </label>
             </div>
-          </fieldset>
-          <fieldset class="questionnaire__fieldset">
-            <div class="title-wrapper">
-              <span class="title-line title-line--left"></span><h2 class="questionnaire__legend title">Комментарий</h2><span class="title-line title-line--right"></span>
-            </div>
+          </div>
+        </fieldset>
+        <fieldset class="questionnaire__fieldset">
+          <div class="title-wrapper">
+            <span class="title-line title-line--left"></span><h2 class="questionnaire__legend title">Комментарий</h2><span class="title-line title-line--right"></span>
+          </div>
+          <div class="questionnaire__wrapper">
             <label>
               <textarea class="questionnaire__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
-          </fieldset>
-          <fieldset class="questionnaire__fieldset questionnaire__fieldset--flex">
-            <div class="title-wrapper">
-              <span class="title-line title-line--left"></span><h2 class="questionnaire__legend title">Дополнительно</h2><span class="title-line title-line--right"></span>
-            </div>
+          </div>
+        </fieldset>
+        <fieldset class="questionnaire__fieldset questionnaire__fieldset--flex">
+          <div class="title-wrapper">
+            <span class="title-line title-line--left"></span><h2 class="questionnaire__legend title">Дополнительно</h2><span class="title-line title-line--right"></span>
+          </div>
+          <div class="questionnaire__wrapper">
             <div class="questionnaire__checkbox-wrapper">
               <input checked hidden class="questionnaire__checkbox" type="checkbox" name="sugar" id="sugar">
               <label class="questionnaire__label questionnaire__checkbox-label" for="sugar">Сахарозаменитель</label>
@@ -120,11 +128,13 @@
               <input hidden class="questionnaire__checkbox" type="checkbox" name="vitamins" id="vitamins">
               <label class="questionnaire__label questionnaire__checkbox-label" for="vitamins">Витамины</label>
             </div>
-          </fieldset>
+          </div>
+        </fieldset>
+        <div class="questionnaire__wrapper questionnaire__wrapper--no-flex">
           <input class="questionnaire__button button" type="submit" value="Отправить заявку">
           <b class="questionnaire__star">* &#0151; Обязательные поля</b>
-        </form>
-      </div>
+        </div>
+      </form>
       <section class="map">
         <div class="map__content">
           <div class="map__wrapper">

@@ -3,6 +3,7 @@
 .questionnaire {
   width: $mobile-width;
   margin: 34px auto 0;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .questionnaire__fieldset {
@@ -356,9 +357,10 @@
     font-size: 20px;
     line-height: 20px;
     width: 284px;
-    margin-top: 39px;
+    margin-top: 34px;
     margin-left: 70px;
     margin-right: 60px;
+    margin-bottom: 0;
     padding: 16px 0;
   }
 
@@ -371,10 +373,28 @@
 
 @media (min-width: $desktop-width) {
   .questionnaire {
-    width: $desktop-width;
+    min-width: $desktop-width;
+    width: auto;
+  }
+
+  .questionnaire__wrapper {
+    min-width: $desktop-width;
+    max-width: $desktop-width-2;
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &--no-flex {
+      width: $desktop-width;
+      margin: 0 auto;
+      display: block;
+    }
   }
 
   .questionnaire__fieldset {
+    max-width: $desktop-width-2;
+    width: auto;
     margin-left: 0;
     margin-right: 0;
     display: flex;
@@ -423,8 +443,8 @@
   .questionnaire__contacts {
     margin-bottom: 28px;
     width: 100%;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     flex-direction: row;
     justify-content: space-between;
   }
