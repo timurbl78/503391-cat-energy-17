@@ -210,6 +210,12 @@
   line-height: 18px;
   font-weight: normal;
   text-transform: uppercase;
+
+  &:active,
+  &::selection,
+  &:focus {
+    border: 2px solid $grey;
+  }
 }
 
 .questionnaire__button {

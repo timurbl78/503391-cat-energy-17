@@ -95,13 +95,13 @@
     margin: 0 auto;
     height: 696px;
     width: 100%;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-image: url("../../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, $green 50%);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50% 696px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-image: url("../../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff 50%, $green 50%);
       /*background-size: 552px 449px, 720px 796px;*/
       background-size: 50% 696px;
     }
