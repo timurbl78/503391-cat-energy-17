@@ -44,8 +44,7 @@
   line-height: 16px;
   font-family: "Arial", sans-serif;
 
-  &:hover path,
-  &:active path {
+  &:hover path {
     fill: $green;
   }
 

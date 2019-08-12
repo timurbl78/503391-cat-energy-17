@@ -19,9 +19,7 @@
 
 .social-list__link {
   &:hover path,
-  &:hover circle,
-  &:active path,
-  &:active circle {
+  &:hover circle {
     fill: $green;
   }
 
