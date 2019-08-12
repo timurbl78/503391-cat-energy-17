@@ -93,7 +93,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-catalog {
-    width: $tablet-width;
+    width: 100%;
   }
 
   .additional-catalog__title {
@@ -107,6 +107,9 @@
 
   .additional-catalog__wrapper {
     margin-top: 4px;
+    width: $tablet-width;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .additional-catalog__list {
