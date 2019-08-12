@@ -44,8 +44,7 @@
   line-height: 16px;
   font-family: "Arial", sans-serif;
 
-  &:hover path,
-  &:active path {
+  &:hover path {
     fill: $green;
   }
 
@@ -89,6 +88,6 @@
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
     width: $desktop-width;
-    padding: 47px 110px;
+    padding: 47px 40px;
   }
 }

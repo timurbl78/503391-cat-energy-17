@@ -65,9 +65,13 @@
   width: 280px;
   height: 289px;
   background-color: #71b548;
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .additional-catalog__gift-text {
@@ -89,7 +93,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-catalog {
-    width: $tablet-width;
+    width: 100%;
   }
 
   .additional-catalog__title {
@@ -103,6 +107,9 @@
 
   .additional-catalog__wrapper {
     margin-top: 4px;
+    width: $tablet-width;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .additional-catalog__list {
@@ -162,7 +169,11 @@
     margin-top: 70px;
     width: 708px;
     height: 200px;
-    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .additional-catalog__gift-text {
@@ -178,7 +189,8 @@
 
 @media (min-width: $desktop-width) {
   .additional-catalog {
-    width: $desktop-width;
+    min-width: $desktop-width;
+    width: auto;
   }
 
   .additional-catalog__title {
@@ -188,7 +200,9 @@
   }
 
   .additional-catalog__wrapper {
-    margin: 0 110px 88px;
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 40px 11px;
     display: flex;
     justify-content: space-between;
   }
@@ -247,8 +261,12 @@
     padding: 0;
     width: 245px;
     height: 288px;
-    background: #71b548 url("../../img/gift-photo-desktop@1x.jpg") no-repeat;
+    background: #71b548 url("../img/gift-photo-desktop@1x.jpg") no-repeat;
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .additional-catalog__gift-image {

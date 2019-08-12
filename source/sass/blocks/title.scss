@@ -15,7 +15,6 @@
 }
 
 .title-line {
-  /*24px*/
   background-color: $green;
   height: 3px;
 }
@@ -41,12 +40,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .title-line--right {
+    margin-left: 36px;
+  }
+
+  .title-line--left {
+    width: 0;
+  }
+}
+
+@media (min-width: $desktop-width-2) {
   .title-line--left {
     width: 70px;
     margin-right: 39px;
-  }
-
-  .title-line--right {
-    margin-left: 36px;
   }
 }
