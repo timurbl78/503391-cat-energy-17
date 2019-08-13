@@ -44,13 +44,17 @@
   line-height: 16px;
   font-family: "Arial", sans-serif;
 
-  &:hover path {
-    fill: $green;
+  &:hover svg {
+    color: $green;
   }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.main-footer__copy-image {
+  color: #666666;
 }
 
 @media (min-width: $tablet-width) {

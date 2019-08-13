@@ -18,20 +18,20 @@
 }
 
 .social-list__link {
-  &:hover path,
-  &:hover circle {
-    fill: $green;
-  }
+  color: #666666;
 
   &:active {
     opacity: 0.3;
   }
 }
 
-.social-list__link-image.st-inst {
-  fill: #231f20;
+.social-list__link-image {
+  fill: #666666;
 }
 
+.social-list__link:hover {
+  color: $green;
+}
 
 @media (min-width: $tablet-width) {
   .social-list {

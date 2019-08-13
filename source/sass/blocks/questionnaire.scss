@@ -181,12 +181,11 @@
 .questionnaire__input--tel {
   &:active + .questionnaire__input-image,
   &:focus + .questionnaire__input-image {
-    fill: $green;
+    color: $green;
   }
 
-  &::spelling-error + .questionnaire__input-image,
-  &::grammar-error + .questionnaire__input-image {
-    fill: $error-color;
+  &:invalid:not(:placeholder-shown) + .questionnaire__input-image {
+    color: $error-color;
   }
 }
 
